@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashutosh.bmicalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/he"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/rrbm"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/rrbm"
+        android:layout_marginTop="73dp"
+        android:text="Enter Height(m)"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/be"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/he"
+        android:layout_alignStart="@+id/he"
+        android:layout_below="@+id/he"
+        android:layout_marginTop="40dp"
+        android:text="Enter Weight(kg)"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <TextView
+        android:id="@+id/ee"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/rrbm"
+        android:layout_alignEnd="@+id/rrbm"
+        android:layout_alignRight="@+id/rrbm"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toRightOf="@+id/be"
+        android:text="Your BMI"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <TextView
+        android:id="@+id/rr"
+        android:layout_width="50dp"
+        android:layout_height="22dp"
+        android:layout_above="@+id/he"
+        android:layout_alignEnd="@+id/ee"
+        android:layout_alignRight="@+id/ee"
+        android:layout_marginBottom="27dp"
+        android:text=".........."
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/btt"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/ee"
+        android:layout_alignLeft="@+id/rrbm"
+        android:layout_alignStart="@+id/rrbm"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:text="CALCULATE MY BMI"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <EditText
+        android:id="@+id/hh"
+        android:layout_width="175dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/he"
+        android:layout_alignBottom="@+id/he"
+        android:layout_alignLeft="@+id/ww"
+        android:layout_alignStart="@+id/ww"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <EditText
+        android:id="@+id/ww"
+        android:layout_width="175dp"
+        android:layout_height="41dp"
+        android:layout_alignTop="@+id/be"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/be"
+        android:layout_toRightOf="@+id/be"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <TextView
+        android:id="@+id/rrbm"
+        android:layout_width="212dp"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="81dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:text="BMI Category Appear Here"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+</RelativeLayout>
